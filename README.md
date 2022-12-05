@@ -4,9 +4,6 @@ Device Tree for Samsung Galaxy M23 5G
 Android device tree for samsung SM-M236B (m23xq)
 #
 # Copyright (C) 2022 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 
 Device configuration for Samsung Galaxy M23 5G
 
