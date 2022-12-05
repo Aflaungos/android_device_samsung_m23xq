@@ -12,7 +12,7 @@ Device configuration for Samsung Galaxy M23 5G
 
 The Samsung Galaxy M23 5G (codename m23xq, M236B) is a upper mid-range smartphone from Samsung
 
-Device specifications
+# Device specifications
 
 Basic	Spec Sheet
 
@@ -30,6 +30,6 @@ Battery	Li-ion 5000mAh, non-removable
 
 Display	LCD, 120Hz, 525 nits, 6.6 inch, 1080 x 2408 pixels, 20:9 ratio
 
-Device picture
+# Device picture
 
 ![m23](https://user-images.githubusercontent.com/31782624/205670871-a460acce-c660-4dce-aa78-834673677a21.jpg)
