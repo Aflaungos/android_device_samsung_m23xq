@@ -13,30 +13,12 @@ vendor/etc/audconf/OPEN/Handset_cal.acdb
 # Audio
 vendor/etc/dolby/dax-default.xml
 vendor/etc/floating_feature.xml
-vendor/lib/librecordalive.so
-vendor/lib/lib_SamsungRec_07010.so
-vendor/lib/hw/audio.primary.lito.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 
 # Camera
-vendor/lib64/libcdsprpc.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libMpeghSwEnc.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.lito
-vendor/lib/camera.device@3.2-impl.so;MODULE=camera.device@3.2-impl.lito
-vendor/lib/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.lito
-vendor/lib/camera.device@3.4-impl.so;MODULE=camera.device@3.4-impl.lito
-vendor/lib/camera.device@3.5-impl.so;MODULE=camera.device@3.5-impl.lito
-vendor/lib64/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.lito
-vendor/lib64/camera.device@3.2-impl.so;MODULE=camera.device@3.2-impl.lito
-vendor/lib64/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.lito
-vendor/lib64/camera.device@3.4-impl.so;MODULE=camera.device@3.4-impl.lito
-vendor/lib64/camera.device@3.5-impl.so;MODULE=camera.device@3.5-impl.lito
 vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
@@ -72,12 +54,8 @@ vendor/lib/camera/ois_mcu_stm32g_fw.bin
 vendor/lib/camera/uw_dual_calibration.bin
 vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib64/hw/com.samsung.chi.override.so
-vendor/lib/libsensorlistener.so
-vendor/lib64/libIMUSensor.so
 vendor/lib/libsec2qc_conversion.so
 vendor/lib64/libsec2qc_conversion.so
-vendor/lib64/libsensorlistener.so
-vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib/libvdis_interface.so
 vendor/lib64/libvdis_interface.so
@@ -104,24 +82,9 @@ vendor/lib64/libdualcam_refocus_video.so
 vendor/lib64/libDualCamBokehCapture.camera.samsung.so
 
 # DRM
-vendor/bin/qseecomd
 vendor/lib/libcppf.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librpmb.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libssd.so
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 vendor/lib/libbauthserver.so
 vendor/lib64/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
@@ -142,36 +105,20 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # Graphics
-vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS667YM01_FHD.xml
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/libGLESv2_adreno.so
-vendor/lib64/libGLESv2_adreno.so
 vendor/lib/libgralloccore.so
 vendor/lib/libgrallocusage.so
 vendor/lib/libgrallocutils.so
 vendor/lib/libgrallocqti.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/libgralloccore.so
 vendor/lib64/libgrallocusage.so
 vendor/lib64/libgrallocutils.so
 vendor/lib64/libgrallocqti.so
-vendor/lib/libsecnativefeature.so
-vendor/lib64/libsecnativefeature.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.rc
-
-# Sensors
-vendor/etc/sensors/config/atoll_qrd_ak991x_0.json
-vendor/etc/sensors/config/atoll_qrd_lsm6dso_0.json
-vendor/etc/sensors/config/sns_hw_revision.json
 
 # HAL Modules
 vendor/lib/hw/gralloc.lito.so
@@ -187,46 +134,27 @@ vendor/firmware/nfc/libpn557_fw.so
 
 # OMX
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
 vendor/lib/libOmxAmrDec.so
 vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxBlackBar.so
 vendor/lib/libOmxCore.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxEvrcEnc.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxG711Enc.so
 vendor/lib/libOmxMpeghDecSw.so
 vendor/lib/libOmxMpeghEncSw.so
-vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxQcelp13Enc.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVdec.so
 vendor/lib/libOmxVenc.so
 vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
 vendor/lib/libstagefrighthw.so
-vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAacEnc.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/libOmxAmrDec.so
 vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxBlackBar.so
 vendor/lib64/libOmxCore.so
 vendor/lib64/libOmxDsdDec.so
-vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxG711Enc.so
@@ -234,12 +162,9 @@ vendor/lib64/libOmxMpeghDecSw.so
 vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxQcelp13Enc.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVdec.so
 vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
-vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib/libmm-omxcore.so
 vendor/lib64/libmm-omxcore.so
@@ -253,8 +178,6 @@ vendor/etc/sensors/config/bitra_lsm6dsm_0.json
 vendor/etc/sensors/config/bitra_mmc5603x_0.json
 vendor/etc/sensors/config/bitra_mmc5603x_1.json
 vendor/etc/sensors/config/lsm6dsm_0.json
-vendor/lib64/sensors.ssc.so
-vendor/lib/sensors.ssc.so
 
 # Stagefright
 vendor/lib/libapex_cmn.so
@@ -280,7 +203,6 @@ vendor/lib/libstagefright_soft_mpeg2dec.so
 vendor/lib/libstagefright_soft_mpeg4dec.so
 vendor/lib/libstagefright_soft_mpeg4enc.so
 vendor/lib/libstagefright_soft_opusdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libstagefright_soft_rawdec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
@@ -290,10 +212,6 @@ vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_flacdec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-
-# Widewine
-vendor/lib/libwvhidl.so
 
 # Wifi
 vendor/etc/wifi/aoa_cldb_falcon.bin
