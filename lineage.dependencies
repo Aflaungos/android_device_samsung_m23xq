@@ -1,5 +1,9 @@
 [
     {
+        "repository":"android_vendor_samsung_sm7225-common",
+        "target_path":"vendor/samsung/m23xq",
+    },
+    {
         "repository": "android_device_samsung_sm7225-common",
         "target_path": "device/samsung/sm7225-common"
     }
