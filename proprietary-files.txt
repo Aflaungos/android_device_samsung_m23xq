@@ -55,6 +55,8 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib/libvdis_interface.so
 vendor/lib64/libvdis_interface.so
+vendor/lib/hw/com.qti.chi.override.so
+vendor/lib64/hw/com.qti.chi.override.so
 
 # Fingerprint
 vendor/lib/libbauthserver.so
