@@ -21,6 +21,12 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 
 # Camera
+vendor/lib64/libcdsprpc.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libMpeghSwEnc.so
+vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/camera.device@1.0-impl.so;MODULE=camera.device@1.0-impl.lito
 vendor/lib/camera.device@3.2-impl.so;MODULE=camera.device@3.2-impl.lito
 vendor/lib/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.lito
@@ -78,7 +84,44 @@ vendor/lib64/libvdis_interface.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qti.chi.override.so
 
+# Camera - mmcamera
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc2.so
+
+# Camera - Postprocessing
+vendor/lib/libtriplecam_image_optical_zoom.so
+vendor/lib/libtriplecam_optical_zoom_control.so
+vendor/lib/libtriplecam_video_optical_zoom.so
+vendor/lib64/libtriplecam_image_optical_zoom.so
+vendor/lib64/libtriplecam_optical_zoom_control.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
+vendor/lib/libdualcam_refocus_image.so
+vendor/lib/libDualCamBokehCapture.camera.samsung.so
+vendor/lib64/libdualcam_refocus_image.so
+vendor/lib64/libdualcam_refocus_video.so
+vendor/lib64/libDualCamBokehCapture.camera.samsung.so
+
+# DRM
+vendor/bin/qseecomd
+vendor/lib/libcppf.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libqisl.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/librpmb.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libssd.so
+
 # Fingerprint
+vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
+vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 vendor/lib/libbauthserver.so
 vendor/lib64/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
@@ -120,6 +163,10 @@ vendor/lib64/libgrallocutils.so
 vendor/lib64/libgrallocqti.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.0-service
+vendor/etc/init/android.hardware.keymaster@4.0-service.rc
 
 # Sensors
 vendor/etc/sensors/config/atoll_qrd_ak991x_0.json
@@ -194,6 +241,8 @@ vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libstagefrighthw.so
+vendor/lib/libmm-omxcore.so
+vendor/lib64/libmm-omxcore.so
 
 # Samsung SLSI IVA
 vendor/lib/libopenvx.so
@@ -204,6 +253,8 @@ vendor/etc/sensors/config/bitra_lsm6dsm_0.json
 vendor/etc/sensors/config/bitra_mmc5603x_0.json
 vendor/etc/sensors/config/bitra_mmc5603x_1.json
 vendor/etc/sensors/config/lsm6dsm_0.json
+vendor/lib64/sensors.ssc.so
+vendor/lib/sensors.ssc.so
 
 # Stagefright
 vendor/lib/libapex_cmn.so
