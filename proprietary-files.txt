@@ -92,6 +92,15 @@ vendor/lib64/libqfp_sensortest.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib64/libgf_in_system_lib.so
 
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib/hw/gatekeeper.sdm660.so
+vendor/lib/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib64/hw/gatekeeper.mdfpp.so
+
 # Graphics
 vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS667YM01_FHD.xml
 vendor/lib/egl/libGLESv2_adreno.so
