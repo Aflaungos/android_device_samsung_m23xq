@@ -147,7 +147,6 @@ vendor/lib64/libOmxCore.so
 vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxMpeghDecSw.so
 vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxQcelp13Enc.so
