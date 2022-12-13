@@ -93,7 +93,7 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/gatekeeper.mdfpp.so
+vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 
@@ -132,7 +132,6 @@ vendor/lib/libOmxCore.so
 vendor/lib/libOmxEvrcEnc.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxMpeghDecSw.so
 vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Enc.so
 vendor/lib/libOmxVdec.so
@@ -145,7 +144,6 @@ vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/libOmxAmrDec.so
 vendor/lib64/libOmxAmrEnc.so
 vendor/lib64/libOmxCore.so
-vendor/lib64/libOmxDsdDec.so
 vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxG711Enc.so
