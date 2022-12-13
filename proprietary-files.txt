@@ -38,6 +38,10 @@ vendor/lib64/camera/com.samsung.tuned.lsi_gc02m1.bin
 vendor/lib64/camera/com.samsung.tuned.lsi_s5kjn1.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx355.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx355_front.bin
+vendor/lib/camera/com.samsung.tuned.lsi_gc02m1.bin
+vendor/lib/camera/com.samsung.tuned.lsi_s5kjn1.bin
+vendor/lib/camera/com.samsung.tuned.sony_imx355.bin
+vendor/lib/camera/com.samsung.tuned.sony_imx355_front.bin
 vendor/lib64/camera/f_dual_calibration.bin
 vendor/lib64/camera/ois_mcu_stm32g_fw.bin
 vendor/lib64/camera/t_tof_calibration.bin
