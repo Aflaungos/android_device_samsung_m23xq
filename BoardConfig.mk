@@ -26,8 +26,5 @@ BOARD_NAME                  := lito
 # Display
 TARGET_SCREEN_DENSITY := 384
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := m23xq
