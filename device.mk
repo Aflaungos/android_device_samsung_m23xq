@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 $(call inherit-product, device/samsung/sm7225-common/common.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/sm7225-common/m23xq/m23xq-vendor.mk)
+$(call inherit-product, vendor/samsung/m23xq/m23xq-vendor.mk)
 
 # Init files
 PRODUCT_PACKAGES += \
