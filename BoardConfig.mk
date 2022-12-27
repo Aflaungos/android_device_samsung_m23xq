@@ -23,6 +23,14 @@ include device/samsung/sm7225-common/BoardConfigCommon.mk
 TARGET_KERNEL_CONFIG        := vendor/m23xq_eur_open_defconfig
 BOARD_NAME                  := lito
 
+# Kernel - prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := true
+ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
+TARGET_PREBUILT_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+endif
+
 # Display
 TARGET_SCREEN_DENSITY := 384
 
