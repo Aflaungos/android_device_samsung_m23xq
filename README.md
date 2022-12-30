@@ -11,12 +11,14 @@
 Device configuration for Samsung Galaxy M23 5G
 ===============================================
 The Samsung Galaxy M23 5G (codename m23xq, M236B) is a upper mid-range smartphone from Samsung
+It was announced in August 2021 and released in September 2021.
+There are also two different variants for International (SM-M236B) and India (SM-E236B).
 
 ## Device specifications
 Basic    | Spec Sheet
 --------:|:----------------------
 SoC      | Qualcomm Snapdragon 750G
-CPU      | Octa-core (6x1.8ghz Kryo 460 & 2x2.2ghz Cortex A77)
+CPU      | Octa-core (6x1.8ghz Kryo 570 & 2x2.2ghz Cortex A77)
 GPU      | Adreno 619
 Memory   | 128GB 6GB RAM
 Shipped Android version | Android 12, OneUI 4.1
