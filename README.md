@@ -1,13 +1,11 @@
-# Android device tree for samsung SM-M236B (m23xq)
-
 ```
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
-
+# Android device tree for samsung SM-M236B (m23xq)
 Device configuration for Samsung Galaxy M23 5G
 ===============================================
 The Samsung Galaxy M23 5G (codename m23xq, M236B) is a upper mid-range smartphone from Samsung
