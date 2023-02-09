@@ -16,9 +16,6 @@
 
 LOCAL_PATH := device/samsung/m23xq
 
-# Inherit vendor blobs
-$(call inherit-product, vendor/samsung/m23xq/m23xq-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
