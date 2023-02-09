@@ -16,7 +16,7 @@
 
 LOCAL_PATH := device/samsung/m23xq
 
-# Inherit from motorola sdm660-common
+# Inherit from motorola sm7225-common
 include device/samsung/sm7225-common/BoardConfigCommon.mk
 
 # Kernel
