@@ -19,5 +19,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     lineage_m23xq-userdebug \
-    lineage_m23xq-user \
-    lineage_m23xq-eng
+    lineage_m23xq-user
