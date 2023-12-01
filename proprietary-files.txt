@@ -379,6 +379,7 @@ vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 
 # GNSS
+-vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
