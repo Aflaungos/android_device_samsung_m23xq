@@ -1,13 +1,13 @@
 #!/bin/bash
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE_COMMON=sm7225-common
+DEVICE_COMMON=m23xq
 VENDOR=samsung
 
 # Load extractutils and do some sanity checks

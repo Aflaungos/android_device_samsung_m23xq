@@ -1,13 +1,13 @@
 #!/bin/bash
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE_COMMON=sm7225-common
+DEVICE_COMMON=m23xq
 VENDOR=samsung
 
 # Load extractutils and do some sanity checks
@@ -51,14 +51,6 @@ done
 if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
-
-function blob_fixup() {
-    case "${1}" in
-        vendor/lib64/libsec-ril.so)
-            sed -i 's/ril.dds.call.ongoing/vendor.calls.ongoing/g' "${2}"
-            ;;
-    esac
-}
 
 # Initialize the helper
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
