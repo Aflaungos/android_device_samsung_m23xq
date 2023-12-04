@@ -28,6 +28,9 @@
 #
 #
 
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mpq-adapter mpq-dmx-hw-plugin
+
 on post-fs-data
     
 # MST/NFC Switch

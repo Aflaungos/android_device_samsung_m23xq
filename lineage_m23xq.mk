@@ -30,8 +30,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Boot animation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
@@ -43,11 +41,8 @@ PRODUCT_MODEL := SM-M326B
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# Recovery
-TARGET_USES_AOSP_RECOVERY := true
-
 PRODUCT_SHIPPING_API_LEVEL := 32
 
 # Fingerprint
-BUILD_FINGERPRINT := "samsung/m23xqxx/m23xq:13/TP1A.220624.014/M236BXXU4CWF3:user/release-keys"
-PRIVATE_BUILD_DESC := "m23xqxx-user 13 TP1A.220624.014 M236BXXU4CWF3 release-keys"
+BUILD_FINGERPRINT := "samsung/m23xqxx/m23xq:13/TP1A.220624.014/M236BXXU4CWI5:user/release-keys"
+PRIVATE_BUILD_DESC := "m23xqxx-user 13 TP1A.220624.014 M236BXXU4CWI5 release-keys"
