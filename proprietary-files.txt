@@ -11,7 +11,6 @@ vendor/etc/audconf/OPEN/Hdmi_cal.acdb
 vendor/etc/audconf/OPEN/Handset_cal.acdb
 
 # ADSP
-vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
@@ -21,8 +20,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
-vendor/etc/dolby/dax-default.xml
-vendor/etc/floating_feature.xml
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib/hw/audio.primary.lito.so
@@ -71,8 +68,6 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -106,8 +101,6 @@ vendor/lib/camera/components/com.qti.stats.hafoverride.so
 vendor/lib64/camera/components/com.qti.stats.hafoverride.so
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib/camera/components/com.qti.hvx.addconstant.so
-vendor/lib64/camera/components/com.qti.hvx.addconstant.so
 vendor/lib/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.qti.stats.awb.so
@@ -125,8 +118,6 @@ vendor/lib/camera/components/com.qti.node.eisv2.so
 vendor/lib64/camera/components/com.qti.node.eisv2.so
 vendor/lib/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib64/camera/components/com.qti.stats.haf.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
@@ -138,14 +129,10 @@ vendor/lib/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib/camera/components/com.qti.node.dummyrtb.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib/camera/components/com.qti.eisv3.so
-vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib/camera/components/com.qti.node.stich.so
 vendor/lib64/camera/components/com.qti.node.stich.so
 vendor/lib/camera/components/com.qti.stats.tracker.so
 vendor/lib64/camera/components/com.qti.stats.tracker.so
-vendor/lib/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib/com.qti.feature2.swmf.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib/camera/components/com.ss.stats.pdlib.so
@@ -183,8 +170,6 @@ vendor/lib/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.rt.so
 vendor/lib64/camera/components/com.ss.stats.aec.so
 vendor/lib/camera/com.samsung.sensor.gc02m1.so
-vendor/lib/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.depth.so
 vendor/lib/camera/components/com.samsung.node.capture_bokeh.so
 vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so
 vendor/lib64/camera/com.samsung.sensor.gc02m1.so
@@ -227,9 +212,6 @@ vendor/lib64/libvdis_interface.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qti.chi.override.so
 
-# Camera - Firmware
-vendor/firmware/CAMERA_ICP.elf
-
 # Camera - mmcamera
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
@@ -249,17 +231,13 @@ vendor/lib64/libdualcam_refocus_image.so
 vendor/lib64/libdualcam_refocus_video.so
 vendor/lib64/libDualCamBokehCapture.camera.samsung.so
 
-# Configstore
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-
 # Device Health
 vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
+vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # Display (HDR)
@@ -286,7 +264,6 @@ vendor/lib64/libtinyxml2_1.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib/libdisp-aba.so
 vendor/lib/vendor.display.color@1.0.so
@@ -317,11 +294,6 @@ vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
 
 # DSP
-vendor/bin/cdsprpcd
-vendor/bin/dspservice
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
@@ -371,27 +343,13 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/gatekeeper.mdfpp.so
-vendor/lib/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 
 # GNSS
--vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/xtra-daemon
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
-vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
-vendor/etc/gps.conf
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib/libbatching.so
@@ -514,9 +472,6 @@ vendor/firmware/a650_sqe.fw
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# IRQ Balance
-vendor/etc/msm_irqbalance.conf
-
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.rc
@@ -528,18 +483,9 @@ vendor/lib/hw/gralloc.lito.so
 vendor/lib64/hw/gralloc.lito.so
 
 # Machine Learning
-vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libreffeature.so
-
-# Media configs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_profiles_V1_0.xml
-
-# NFC
-vendor/firmware/nfc/libpn557_fw.so
 
 # OMX
 vendor/lib/libstagefright_omx_vendor.so
@@ -586,13 +532,6 @@ vendor/lib64/libmm-omxcore.so
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
@@ -609,20 +548,10 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 
 # Peripheral Manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # QMI
-vendor/bin/irsc_util
-vendor/bin/pd-mapper
-vendor/bin/rmt_storage
-vendor/bin/tftp_server
-vendor/etc/data/dsi_config.xml
-vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/init/vendor.qti.tftp.rc
-vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdsi_netctrl.so
@@ -703,7 +632,6 @@ vendor/lib/libsns_registry_skel.so
 vendor/lib/libsnsapi.so
 vendor/etc/sensors/config/bitra_lsm6dsm_0.json
 vendor/etc/sensors/sns_reg_config
-vendor/etc/sensors/hals.conf
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
@@ -715,7 +643,6 @@ vendor/lib64/libnanopb.so
 vendor/etc/sensors/config/bitra_mmc5603x_1.json
 vendor/etc/sensors/config/lsm6dsm_0.json
 vendor/etc/sensors/config/atoll_default_sensors.json
-vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_ccd.json
 vendor/etc/sensors/config/sns_ccd_v2_walk.json
@@ -815,31 +742,20 @@ vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefright_flacdec.so
 
 # Thermal
-vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
-vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
-vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libhypervintf.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # TrustZone
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/gpfspath_oem_config.xml
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libGPreqcancel.so
@@ -877,14 +793,7 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
 # VPP
-vendor/etc/configstore/vpp.configstore.xml
 vendor/lib/libvppclient.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
@@ -899,7 +808,3 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 # Wifi
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
-
-# WiFi Display (vendor)
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
