@@ -16,15 +16,10 @@
 
 LOCAL_PATH := device/samsung/m23xq
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # call the common setup
 $(call inherit-product, device/samsung/sm7225-common/common.mk)
-
-# call the proprietary setup
-$(call inherit-product, vendor/samsung/m23xq/m23xq-vendor.mk)
 
 # Init files
 PRODUCT_PACKAGES += \
