@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,5 +43,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 PRODUCT_SHIPPING_API_LEVEL := 32
 
 # Fingerprint
-BUILD_FINGERPRINT := "samsung/m23xqxx/qssi:13/TP1A.220624.014/M236BXXU4CWI5:user/release-keys"
-PRIVATE_BUILD_DESC := "m23xqxx-user 13 TP1A.220624.014 M236BXXU4CWI5 release-keys"
+BUILD_FINGERPRINT := "samsung/m23xqxx/m23xq:14/UP1A.231005.007/M236BXXS5DXC1:user/release-keys"
+PRIVATE_BUILD_DESC := "m23xqxx-user 14 UP1A.231005.007 M236BXXS5DXC1 release-keys"
