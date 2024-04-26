@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_m23xq.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m23xq-sp2a-userdebug \
-    lineage_m23xq-sp2a-user \
-    lineage_m23xq-sp2a-eng
+    lineage_m23xq-userdebug \
+    lineage_m23xq-user \
+    lineage_m23xq-eng
