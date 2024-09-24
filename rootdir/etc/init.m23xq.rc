@@ -30,28 +30,12 @@
 
 on post-fs-data
     
+# Samsung Pay
+    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+
 # MST/NFC Switch
+    chown vendor_spay system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl    
-
-# Fingerprint sensor
-    chmod 0660 /dev/esfp0
-    chown system system /dev/esfp0
-
-    chown system radio /sys/class/fingerprint/fingerprint/type_check
-    chown system radio /sys/class/fingerprint/fingerprint/name
-    chown system radio /sys/class/fingerprint/fingerprint/vendor
-    chown system radio /sys/class/fingerprint/fingerprint/adm
-    chown system radio /sys/class/fingerprint/fingerprint/bfs_values
-    chown system radio /sys/class/fingerprint/fingerprint/hbm
-    chown system radio /sys/class/fingerprint/fingerprint/position
-    chown system radio /sys/class/fingerprint/fingerprint/intcnt
-    chown system radio /sys/class/fingerprint/fingerprint/resetcnt
-    chown system radio /sys/class/fingerprint/fingerprint/rb
-
-    mkdir /data/vendor/biometrics 0770 system system
-    mkdir /data/vendor/fpSnrTest 0770 system system
-    mkdir /efs/biometrics 0770 system system
-    mkdir /efs/biometrics/meta 0770 system system
 
 # setup cgroup freezer for freecess
     mkdir /dev/freezer
@@ -89,6 +73,12 @@ on post-fs-data
     chmod 0644 /dev/freezer/abnormal/cgroup.procs
     chmod 0644 /dev/freezer/abnormal/freezer.state
 
+# Create carrier folder for HiddenMenu
+on post-fs
+     mkdir /efs/carrier 0755 radio system
+     chown radio system /efs/carrier
+     chown radio system /efs/carrier/HiddenMenu
+
 on boot
 # SDHMS Slowdown : Cpuset
     mkdir /dev/cpuset/abnormal
@@ -111,12 +101,13 @@ on boot
     chmod 0664 /dev/cpuset/moderate/cpus
 
 # Performance
-    chown system radio /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/available_frequencies
-    chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/available_frequencies
+    chown root system /dev/cpuset/restricted/cpus
+    chmod 0664 /dev/cpuset/restricted/cpus
+    write /dev/cpuset/restricted/cpus 0-7
 
-# SSWAP with SQZR
-on boot
-    write /proc/sys/vm/swappiness 160
+# SQZR
+    write /proc/sys/vm/swappiness 145
+    write /sys/module/zram/parameters/zram_balance_ratio 30
 
 # Pageboostd
 on property:sys.boot_completed=1
@@ -128,3 +119,35 @@ service pageboostd /system/bin/pageboostd
     group system mount radio net_bt sdcard_rw shell media media_rw
     socket pageboostd seqpacket 0660 system system
     disabled
+
+# SSU (Samsung SIM Unlock)
+on property:ro.boot.carrierid=TMB
+    setprop ssu.support 1
+on property:ro.boot.carrierid=TMK
+    setprop ssu.support 1
+on property:ro.boot.carrierid=CCT
+    setprop ssu.support 1
+on property:ro.boot.carrierid=USC
+    setprop ssu.support 1
+on property:ro.boot.carrierid=AIO
+    setprop ssu.support 1
+	
+# some priv-apps of SPR bind mount to TMB priv-apps
+on post-fs-data && property:ro.csc.sales_code=TMB
+    umount /system/carrier
+    mkdir /mnt/temp
+    mount none /system/carrier/SPR /mnt/temp bind
+    mount none /system/carrier/TMB /system/carrier bind
+    mount none /mnt/temp/priv-app/MobileID /system/carrier/priv-app/MobileID bind
+    mount none /mnt/temp/priv-app/CarrierDeviceManager /system/carrier/priv-app/CarrierDeviceManager bind
+    mount none /mnt/temp/priv-app/MobileInstaller /system/carrier/priv-app/MobileInstaller bind
+    mount none /mnt/temp/priv-app/SprintAndroidExtension2 /system/carrier/priv-app/SprintAndroidExtension2 bind
+    mount none /mnt/temp/priv-app/SprintHub /system/carrier/priv-app/SprintHub bind
+    umount /mnt/temp
+    rmdir /mnt/temp
+
+# Remosaic daemon works with cameraserver
+service remosaic_daemon /vendor/bin/remosaic_daemon
+    class core
+    user camera
+    group camera
