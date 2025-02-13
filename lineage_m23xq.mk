@@ -42,6 +42,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_SHIPPING_API_LEVEL := 32
 
+# OMX Service disabled
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 # Fingerprint
-BUILD_FINGERPRINT := "samsung/m23xqxx/m23xq:14/UP1A.231005.007/M236BXXS7EXG2:user/release-keys"
-PRIVATE_BUILD_DESC := "m23xqxx-user 14 UP1A.231005.007 M236BXXS7EXG2 release-keys"
+BUILD_FINGERPRINT := "samsung/m23xqxx/qssi:14/UP1A.231005.007/M236BXXS9EXK5:user/release-keys"
+PRIVATE_BUILD_DESC := "m23xqxx-user 14 UP1A.231005.007 M236BXXS9EXK5 release-keys"
