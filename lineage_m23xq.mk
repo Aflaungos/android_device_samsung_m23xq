@@ -50,3 +50,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Security patch
 VENDOR_SECURITY_PATCH := 2025-08-01
+
+# Fingerprint
+BUILD_FINGERPRINT := "samsung/m23xqxx/qssi:14/UP1A.231005.007/M236BXXSBEYH2:user/release-keys"
+PRIVATE_BUILD_DESC := "m23xqxx-user 14 UP1A.231005.007 M236BXXSBEYH2 release-keys"
