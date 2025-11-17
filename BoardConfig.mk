@@ -23,7 +23,7 @@ TARGET_KERNEL_CONFIG        := vendor/lineage-m23xq_defconfig
 BOARD_NAME                  := lito
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 384
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := m23xq
