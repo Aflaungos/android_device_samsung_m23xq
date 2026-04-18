@@ -39,11 +39,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Security patch
-VENDOR_SECURITY_PATCH := 2026-01-01
+VENDOR_SECURITY_PATCH := 2026-02-05
 
 TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint="samsung/m23xqxx/qssi:14/UP1A.231005.007/M236BXXSDEYL2:user/release-keys" \
-    BuildDesc="m23xqxx-user 14 UP1A.231005.007 M236BXXSDEYL2 release-keys"
+    BuildFingerprint="samsung/m23xqxx/qssi:14/UP1A.231005.007/M236BXXSEEZB2:user/release-keys" \
+    BuildDesc="m23xqxx-user 14 UP1A.231005.007 M236BXXSEEZB2 release-keys"
